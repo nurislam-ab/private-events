@@ -5,3 +5,11 @@
 <h4>
     <%= @user.email %>
 </h4>
+
+<h4>User's events</h4>
+
+<%= @events.each do |e| %>
+    <h3><%= e.title %></h3>
+    <h4><%= e.date %></h4>
+    <p><%= e.description %></p>
+<% end %>
