@@ -1,24 +1,41 @@
-# README
+# Private events
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> This is an application where the users can create and attend events.
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+- Ruby on Rails
+- SQlite3
+- Ruby
 
-* System dependencies
+## Authors
 
-* Configuration
+👤 **Luis Octavio Ramirez Cruz**
 
-* Database creation
+- Github: [@LOctavio](https://github.com/LOctavio)
+- Twitter: [@Octavio_ram431](https://twitter.com/Octavio_ram431)
+- Linkedin: [luis-octavio-ramirez-cruz](https://www.linkedin.com/in/luis-octavio-ramirez-cruz)
 
-* Database initialization
+👤 **Nurislam Abd**
 
-* How to run the test suite
+- Github: [@nurislam-ab](https://github.com/nurislam-ab/ )
+- Twitter: [@NurislamAb](https://twitter.com/NurislamAb)
+- Linkedin: [nurislam-ab](https://www.linkedin.com/in/nurislam-ab/)
 
-* Services (job queues, cache servers, search engines, etc.)
+## 🤝 Contributing
 
-* Deployment instructions
+Contributions, issues and feature requests are welcome!
 
-* ...
+Feel free to check the [issues page](https://github.com/nurislam-ab/private-events/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
