@@ -1,9 +1,9 @@
-<h1>Events</h1>
+<h1>All events</h1>
 
 <% @events.each do |e| %>
 <div class="event-block">
     <div class="event-field">
-        <h3><%= e.title %></h3>
+        <h3><%= link_to e.title, event_path(e) %></h3>
     </div>
     
     <div class="event-field">
@@ -13,6 +13,23 @@
     <div class="event-field">
         <p><%= e.description %></p>
     </div>
+
+    <div class="event-field">
+        <p><%= e.creator.name %></p>
+    </div>
 </div>
 <% end %>
+
+
+<h2>Upcoming events</h2>
+<% @upcomming_events.each do |e| %>
+    <h4><%= e.title%></h4>
+    <p><%= e.date %></p>
+<% end %>
+
+<h2>Past events</h2>
+<% @past_events.each do |e| %>
+    <h4><%= e.title%></h4>
+    <p>ago <%=  time_ago_in_words(e.date) %></p>
+<% end %> 
 
