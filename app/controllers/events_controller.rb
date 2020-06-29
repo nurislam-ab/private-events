@@ -5,14 +5,21 @@ class EventsController < ApplicationController
 
   def create
     @event = current_user.events.build(event_params)
+
+    if @event.save
+      redirect_to root_path
+    else
+      render :new
+    end
   end
 
   def index
-    @event = Event.all
+    @events = Event.all
   end
 
   def show
     @event = Event.find(params[:id])
+    
   end
 
   private
