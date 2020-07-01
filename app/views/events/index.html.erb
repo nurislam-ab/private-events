@@ -23,13 +23,43 @@
 
 <h2>Upcoming events</h2>
 <% @upcomming_events.each do |e| %>
-    <h4><%= e.title%></h4>
-    <p><%= e.date %></p>
+    <div class="event-block">
+        <div class="event-field">
+            <h3><%= link_to e.title, event_path(e) %></h3>
+        </div>
+        
+        <div class="event-field">
+            <h4><%= e.date %></h4>
+        </div>
+        
+        <div class="event-field">
+            <p><%= e.description %></p>
+        </div>
+
+        <div class="event-field">
+            <p><%= e.creator.name %></p>
+        </div>
+    </div>
 <% end %>
 
 <h2>Past events</h2>
 <% @past_events.each do |e| %>
-    <h4><%= e.title%></h4>
-    <p>ago <%=  time_ago_in_words(e.date) %></p>
+    <div class="event-block">
+        <div class="event-field">
+            <h3><%= link_to e.title, event_path(e) %></h3>
+        </div>
+        
+        <div class="event-field">
+            <h4><%= e.date %></h4>
+        </div>
+        
+        <div class="event-field">
+            <p><%= e.description %></p>
+        </div>
+
+        <div class="event-field">
+            <p><%= e.creator.name %></p>
+        </div>
+    </div>
 <% end %> 
 
