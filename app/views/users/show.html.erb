@@ -25,3 +25,37 @@
     </div>
 </div>
 <% end %>
+
+<h3>Past events</h3>
+<% @past_events.each do |e| %>
+<div class="event-block">
+    <div class="event-field">
+        <h3><%= e.title %></h3>
+    </div>
+    
+    <div class="event-field">
+        <h4><%= e.date %></h4>
+    </div>
+    
+    <div class="event-field">
+        <p><%= e.description %></p>
+    </div>
+</div>
+<% end %>
+
+<h3>Upcoming events</h3>
+<% @upcoming_events.each do |e| %>
+<div class="event-block">
+    <div class="event-field">
+        <h3><%= e.title %></h3>
+    </div>
+    
+    <div class="event-field">
+        <h4><%= e.date %></h4>
+    </div>
+    
+    <div class="event-field">
+        <p><%= e.description %></p>
+    </div>
+</div>
+<% end %>
