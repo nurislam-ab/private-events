@@ -9,7 +9,7 @@
 - Ruby
 
 ## Screenshot 
-Link [link](https://github.com/nurislam-ab/.png)
+Link [link](https://github.com/nurislam-ab/private-events/blob/feature/app/assets/images/ssh_home.png)
 
 
 ## Authors
