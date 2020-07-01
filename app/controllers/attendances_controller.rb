@@ -1,14 +1,14 @@
 class AttendancesController < ApplicationController
-    def new
-        @attendance = Attendance.new
-    end
-    
-    def create
-        @user = User.find(params[:user_id])
-        @event = Event.find(params[:event_id])
+  def new
+    @attendance = Attendance.new
+  end
 
-        @event.attendees << current_user
+  def create
+    @user = User.find(params[:user_id])
+    @event = Event.find(params[:event_id])
 
-        redirect_to @event
-    end
+    @event.attendees << current_user
+
+    redirect_to @event
+  end
 end

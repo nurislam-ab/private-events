@@ -1,12 +1,11 @@
 class ApplicationController < ActionController::Base
-    include SessionsHelper
-    # helper_method :current_user
+  include SessionsHelper
+  # helper_method :current_user
 
+  # private
 
-    # private
-
-    # def current_user
-    #     @_current_user ||= session[:current_user_id] &&
-    #       User.find_by(id: session[:current_user_id])
-    # end
+  # def current_user
+  #     @_current_user ||= session[:current_user_id] &&
+  #       User.find_by(id: session[:current_user_id])
+  # end
 end
