@@ -1,0 +1,34 @@
+<h2> Event title:
+    <%= @event.title%>
+</h2>
+
+<h4> Date and time: 
+    <%= @event.date%>
+</h4>
+
+<h4> 
+    Event created by <%= @event.creator.name%>
+</h4>
+
+<p> Description: 
+    <%= @event.description%>
+</p>
+
+<% if logged_in? && @event.id%>
+    <%= form_with(url: '/attendances', method: 'post') do %>
+        <%= hidden_field_tag(:user_id, @user.id) %>
+        <%= hidden_field_tag(:event_id, @event.id) %>
+        <%= submit_tag("Attend") %>
+    <% end %>
+<% end %>
+
+<div>
+    <ul>
+      <% @event.attendees.each do |attendee| %>
+        <li>
+            <p><%= attendee.name %></p>
+            <%= link_to "View Profile", user_path(attendee) %>
+        </li>
+      <% end %>
+    </ul>
+</div>
